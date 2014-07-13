@@ -1,4 +1,4 @@
-bash
+Install Worpdpress
 ====
 I use this script, in Debian, with wp-cli and the professionnal theme roots.
 
