@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install wordpress in server Debian with wp-cli
+#I use this script, in Debian, with wp-cli and the professionnal theme roots.
 
 echo 'please, your database name'
 read dbName
@@ -17,7 +17,7 @@ mysql -u root -p"$password" -e "CREATE DATABASE \`$dbName\`;"
 ##Download the file
 wp core download --allow-root
 
-#create the wp-config.php
+#create the wp-config.php for production work
 wp core config --dbname=$dbName --dbuser=root --dbpass=$password --allow-root
 
 #install Wordpress
@@ -33,11 +33,11 @@ echo 'enter the website email, must have email valid'
 read admin_email
 wp core install --url=$url --title=$title --admin_user=$admin_user --admin_password=$admin_password --admin_email=$admin_email --allow-root
 
-#install theme roots
+#install the theme roots and activate it
 wp theme install https://github.com/roots/roots/archive/master.zip --activate --allow-root
 
 #list the themes installed
 wp theme list --allow-root
-echo 'the theme was atvivate'
+echo 'the theme was activate'
 # activate theme a roots"
 #wp theme activate roots --allow-root
