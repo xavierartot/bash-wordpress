@@ -4,7 +4,7 @@
 echo 'please, your database name'
 read dbName
 
-#copy phpmyadmin in the directory
+#copy phpmyadmin in the directory, you can remove this line...
 cp -Rf /var/www/phpmyadmin /home/$dbName/www/phpmyadmin
 
 #create the password variables for the database
