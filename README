@@ -22,5 +22,9 @@ Theme Roots: https://github.com/roots/roots
 7 - list the themes installed
 
 
-Install WordPress and Roots in the server web local MAMP and Mac.
+Install WordPress and Roots in the server web local and Mac or Linux.
+file: wp-local-mamp-install.sh
+
+
+Install WordPress the server web local.
 file: wp-local-install.sh
