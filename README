@@ -1,26 +1,26 @@
-Install Wordpress and Roots in the server web Debian.
+Install WordPress and Roots on the Debian web server.
 file: wp-server-install.sh
 
 I use this script, with wp-cli and the professionnal theme Roots:
 
 wp-cli: http://wp-cli.org/
 
-Theme roots: https://github.com/roots/roots
+Theme Roots: https://github.com/roots/roots
 
 1 - copy phpmyadmin in the work repertory
 
-2 - Create a database
+2 - create a database
 
-3 - download Wordpress
+3 - download WordPress
 
 4 - create the wp-config.php for production work
 
-5 - install Wordpress
+5 - install WordPress
 
-6 - install the theme roots and activate it
+6 - install the theme Roots and activate it
 
 7 - list the themes installed
 
 
-Install Worpdpress and Roots in the server web local MAMP and Mac.
+Install WordPress and Roots in the server web local MAMP and Mac.
 file: wp-local-install.sh
