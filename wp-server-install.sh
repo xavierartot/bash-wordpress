@@ -41,3 +41,4 @@ wp theme list --allow-root
 echo 'the theme was activate'
 # activate theme a roots"
 #wp theme activate roots --allow-root
+
