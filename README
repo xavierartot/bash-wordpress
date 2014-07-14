@@ -23,6 +23,7 @@ Theme Roots: https://github.com/roots/roots
 
 
 Install WordPress and Roots in the server web local and Mac or Linux.
+I used wp-cli.
 file: wp-local-mamp-install.sh
 
 
