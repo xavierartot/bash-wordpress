@@ -1,5 +1,7 @@
 #! /bin/bash -e
-# installe wordpress en local avec MAMP et le theme Root
+# CONTEXT
+# installe Wordpress en local avec MAMP et le theme Roots.
+# install Wordpress in local with MAMP and the theme Roots.
 
 echo 'please, create your repertoire website'
 read repertoire

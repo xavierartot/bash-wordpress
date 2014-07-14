@@ -1,6 +1,7 @@
-Install Worpdpress
+Install Worpdpress and Roots in the server web Debian.
+file: wp-server-install.sh
 
-I use this script, in Debian, with wp-cli and the professionnal theme roots.
+I use this script, with wp-cli and the professionnal theme Roots:
 
 wp-cli: http://wp-cli.org/
 
@@ -19,3 +20,7 @@ Theme roots: https://github.com/roots/roots
 6 - install the theme roots and activate it
 
 7 - list the themes installed
+
+
+Install Worpdpress and Roots in the server web local MAMP and Mac.
+file: wp-local-install.sh
