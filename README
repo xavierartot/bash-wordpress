@@ -1,5 +1,7 @@
-  ##Install WordPress and Roots on the Debian web server.
+Install WordPress and Roots on the Debian web server.
+
 file: wp-server-install.sh
+--------------------------
 
 I use this script, with wp-cli and the professionnal theme Roots:
 
