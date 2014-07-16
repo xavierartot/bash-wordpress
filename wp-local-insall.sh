@@ -1,7 +1,8 @@
 #! /bin/bash -e
 # CONTEXT
-# installe Wordpress en local avec MAMP et le theme Roots.
-# install Wordpress in local with MAMP and the theme Roots.
+# installe Wordpress en local et le theme Roots sans la configuration.
+# install Wordpress in local with the theme Roots without configuration.
+# line 28, I use the port 8888 with, you needed to change the port on Linux
 
 echo 'please, create your repertoire website'
 read repertoire
@@ -29,4 +30,3 @@ open http://localhost:8888/$repertoire
 
 cd wp-content/themes
 git clone https://github.com/roots/roots.git
-
