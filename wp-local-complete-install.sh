@@ -39,6 +39,18 @@ wp core install --url=http://localhost:8888/$rep --title=$title --admin_user=$ad
 #install the theme roots and activate it
 wp theme install https://github.com/roots/roots/archive/master.zip --activate
 
+#creation de post de 1 a 100
+read -rp "You want som post by default (100 maximum): " post
+
+if [[ $post = *[!0-9]* ]]; then  # if post contains any non-digits
+    printf >&2 'Invalid input\n'
+elif (( post < 0 || post > 100 )); then
+    printf >&2 '%d is out of range (0-100)\n' "$post"
+else
+    #printf 'Creating post %d\n' "$post"
+    curl http://loripsum.net/api/5 | wp post generate --post_content --count=$post
+fi
+
 # activate theme a roots"
 wp theme activate roots-master
 echo 'the theme was activate'
