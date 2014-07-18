@@ -37,7 +37,7 @@ line 36, I use the port 8888 with, you needed to change the port for Linux
 Install WordPress the server web local.
 file: wp-local-partiel-install.sh
 
- CONTEXT
- installe Wordpress en local et le theme Roots sans la configuration.
- install Wordpress in local with the theme Roots without configuration.
- line 28, I use the port 8888 with, you needed to change the port on Linux
+   CONTEXT
+   installe Wordpress en local et le theme Roots sans la configuration.
+   install Wordpress in local with the theme Roots without configuration.
+   line 28, I use the port 8888 with MAMP, you needed to change the port on Linux

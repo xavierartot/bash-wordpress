@@ -22,6 +22,7 @@ echo 'create the file wp-config.php'
 wp core config --dbname=$rep --dbuser=root --dbpass=root --extra-php <<PHP
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
+define( 'WP_ENV', development);
 PHP
 
 #install Wordpress
