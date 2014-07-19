@@ -1,4 +1,5 @@
-Install WordPress and Roots on the Debian web server.
+Install WordPress And Roots On The debian Web Server
+====================================================
 
 file: wp-server-install.sh
 --------------------------
@@ -24,7 +25,9 @@ Theme Roots: https://github.com/roots/roots
 7 - list the themes installed
 
 
-Install WordPress and Roots in the server web local and Mac or Linux.
+Install WordPress And Roots In The Server Web Local And Mac Or Linux
+====================================================================
+
 I used wp-cli.
 file: wp-local-complete-install.sh
 
@@ -36,7 +39,9 @@ If you have some trouble with (wp-cli and MAMP): http://www.chefduweb.nl/2013/11
 For use grunt, you need to install npm: https://www.npmjs.org/
 line 36, I use the port 8888 with, you needed to change the port for Linux
 
-Install WordPress the server web local.
+Install WordPress The Server Web Local
+======================================
+
 file: wp-local-partiel-install.sh
 
    CONTEXT
