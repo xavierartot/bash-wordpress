@@ -17,7 +17,7 @@ echo 'create the database'
 mysql -u root -p"root" -e "CREATE DATABASE \`$rep\`;"
 
 # Standard wp-config.php file
-# Enable WP_DEBUG and WP_DEBUG_LOG
+# Enable WP_ENV, WP_DEBUG and WP_DEBUG_LOG
 echo 'create the file wp-config.php'
 wp core config --dbname=$rep --dbuser=root --dbpass=root --extra-php <<PHP
 define( 'WP_DEBUG', true );
@@ -28,11 +28,11 @@ PHP
 #install Wordpress
 echo 'enter the website title, must have one word'
 read title
-echo 'enter the admin user, must have one word'
+echo 'enter the admin user (escape the space with the sign "\")'
 read admin_user
 echo 'enter the admin password, must have 4 letters'
 read admin_password
-echo 'enter the website email, must have email valid'
+echo 'enter the website email, must have email'
 read admin_email
 wp core install --url=http://localhost:8888/$rep --title=$title --admin_user=$admin_user --admin_password=$admin_password --admin_email=$admin_email
 
@@ -51,7 +51,7 @@ else
     curl http://loripsum.net/api/5 | wp post generate --post_content --count=$post
 fi
 
-# activate theme a roots"
+# activate the theme a roots"
 wp theme activate roots-master
 echo 'the theme was activate'
 
@@ -68,7 +68,8 @@ sudo npm install -g grunt-cli
 rm -Rf node_modules
 npm install
 
-echo "start grunt: grunt"
+echo "start grunt"
 grunt
 
+echo "Start grunt watch"
 grunt watch

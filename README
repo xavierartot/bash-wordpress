@@ -29,6 +29,8 @@ I used wp-cli.
 file: wp-local-complete-install.sh
 
 install WordPress and the theme Roots in local for Mac and Linux, installing grunt ant configure it.
+Create some post by default, with lorem...
+
 You need to install wp-cli: http://wp-cli.org/
 If you have some trouble with (wp-cli and MAMP): http://www.chefduweb.nl/2013/11/getting-wp-cli-to-work-with-mamp/
 For use grunt, you need to install npm: https://www.npmjs.org/
