@@ -62,14 +62,14 @@ cd $PWD/wp-content/themes/roots-master
 echo "move to the folder theme"
 echo $PWD/wp-content/themes/roots-master
 
+echo 'Initialise git'
+git init
+
 echo "install npm globally: npm install -g grunt"
 echo "Enter your password system"
 sudo npm install -g grunt-cli
 rm -Rf node_modules
 npm install
-
-echo 'Initialise git'
-git init
 
 echo "start grunt"
 grunt
