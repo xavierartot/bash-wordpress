@@ -68,6 +68,9 @@ sudo npm install -g grunt-cli
 rm -Rf node_modules
 npm install
 
+echo 'Initialise git'
+git init
+
 echo "start grunt"
 grunt
 
