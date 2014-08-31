@@ -26,13 +26,13 @@ define( 'WP_ENV', development);
 PHP
 
 #install Wordpress
-echo 'enter the website title, must have one word'
+echo 'enter the website title (escape the space with "\")'
 read title
-echo 'enter the admin user (escape the space with the sign "\")'
+echo 'enter the admin user'
 read admin_user
-echo 'enter the admin password, must have 4 letters'
+echo 'enter the admin password'
 read admin_password
-echo 'enter the website email, must have email'
+echo 'enter the email valid'
 read admin_email
 wp core install --url=http://localhost:8888/$rep --title=$title --admin_user=$admin_user --admin_password=$admin_password --admin_email=$admin_email
 
@@ -59,20 +59,22 @@ echo 'the theme was activate'
 wp theme list
 
 cd $PWD/wp-content/themes/roots-master
-echo "move to the folder theme"
+#echo "move to the folder theme"
 echo $PWD/wp-content/themes/roots-master
 
 echo 'Initialise git'
 git init
 
-echo "install npm globally: npm install -g grunt"
-echo "Enter your password system"
-sudo npm install -g grunt-cli
-rm -Rf node_modules
+echo "install npm globally: npm install -g grunt and bower"
+#echo "Enter your password system"
+sudo npm install -g grunt-cli bower
+
+# if you have some trouble with npm delete node_modules/
+#rm -Rf node_modules
 npm install
 
-echo "start grunt"
-grunt
+echo "inti grunt"
+grunt dev
 
-echo "Start grunt watch"
+#echo "Start grunt watch"
 grunt watch

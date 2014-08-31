@@ -34,11 +34,11 @@ read admin_email
 wp core install --url=$url --title=$title --admin_user=$admin_user --admin_password=$admin_password --admin_email=$admin_email --allow-root
 
 #install the theme roots and activate it
-wp theme install https://github.com/roots/roots/archive/master.zip --activate --allow-root
+#wp theme install https://github.com/roots/roots/archive/master.zip --activate --allow-root
 
 #list the themes installed
-wp theme list --allow-root
-echo 'the theme was activate'
+#wp theme list --allow-root
+#echo 'the theme was activate'
 # activate theme a roots"
 #wp theme activate roots --allow-root
 
