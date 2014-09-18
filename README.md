@@ -1,7 +1,7 @@
-Script bash for your worklow
+Script bash for your workflow
 ============================
 
-Install WordPress, Roots(WordPress Theme) On The debian Web Server
+Install WordPress, Roots (WordPress Theme) on the Debian Web Server
 ------------------------------------------------------------------
 
 file: wp-server-install.sh
