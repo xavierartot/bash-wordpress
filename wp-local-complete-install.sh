@@ -37,7 +37,8 @@ read admin_email
 wp core install --url=http://localhost:8888/$rep --title=$title --admin_user=$admin_user --admin_password=$admin_password --admin_email=$admin_email
 
 #install the theme roots and activate it
-wp theme install https://github.com/roots/roots/archive/master.zip --activate
+wp theme install https://github.com/roots/sage/archive/master.zip --activate
+#https://github.com/roots/roots/archive/master.zip --activate
 
 #creation de post de 1 a 100
 read -rp "You want som post by default (100 maximum): " post
@@ -52,29 +53,27 @@ else
 fi
 
 # activate the theme a roots"
-wp theme activate roots-master
+wp theme activate sage-master
 echo 'the theme was activate'
 
 #list the themes installed
 wp theme list
 
-cd $PWD/wp-content/themes/roots-master
+cd $PWD/wp-content/themes/sage-master
 #echo "move to the folder theme"
-echo $PWD/wp-content/themes/roots-master
+echo $PWD/wp-content/themes/sage-master
 
-echo 'Initialise git'
-git init
+#echo 'Initialise git'
+#git init
 
-echo "install npm globally: npm install -g grunt and bower"
+#echo "install npm globally: npm install -g grunt and bower"
 #echo "Enter your password system"
-sudo npm install -g grunt-cli bower
+#sudo npm install -g grunt-cli bower
 
 # if you have some trouble with npm delete node_modules/
 #rm -Rf node_modules
-npm install
+npm install && bower install
 
-echo "inti grunt"
-grunt dev
+#echo "inti gulp"
+#grunt dev
 
-#echo "Start grunt watch"
-grunt watch
