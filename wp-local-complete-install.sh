@@ -22,9 +22,13 @@ ADMIN_USER='xav'
 ADMIN_PASSWORD='xav'
 EMAIL='xavierartot@gmail.com'
 ##read admin_email
-echo TITLE
-wp core install --url=http://localhost:8888/$rep --title=$TITLE --admin_user=$ADMIN_USER --admin_password=$ADMIN_PASSWORD --admin_email=$EMAIL
-echo TITLE
+#echo TITLE
+wp core install --url=http://localhost:8888/$rep --title=$TITLE --admin_user=$ADMIN_USER --admin_password=$ADMIN_PASSWORD --admin_email=$EMAIL <<PHP
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define(‘WP_MEMORY_LIMIT’, ‘128M’)
+PHP
+#echo TITLE
 
 
 #creation de post de 1 a 100
