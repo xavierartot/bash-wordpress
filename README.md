@@ -10,7 +10,11 @@ wp-cli: http://wp-cli.org/
 MAMP
 Terminal
 
-# task for this script:
+Change the your password here:
+ADMIN_USER='xav'
+ADMIN_PASSWORD='xav'
+
+### task for this script:
 
 * - copy phpmyadmin in the work repertory
 
