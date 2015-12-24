@@ -5,12 +5,12 @@ Install WordPress, Roots (WordPress Theme) on local with wp-cli
 You need to have Mamp with the password by default.
 ------------------------------------------------------------------
 
-file: wp-server-install.sh
-I use this script, with wp-cli and the professionnal theme Roots:
-
+You need:
 wp-cli: http://wp-cli.org/
+MAMP
+Terminal
 
-Theme Roots: https://github.com/roots/roots
+# task for this script:
 
 * - copy phpmyadmin in the work repertory
 
