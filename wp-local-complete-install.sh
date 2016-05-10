@@ -26,23 +26,24 @@ EMAIL='xavierartot@gmail.com'
 wp core install --url=http://localhost:8888/$rep --title=$TITLE --admin_user=$ADMIN_USER --admin_password=$ADMIN_PASSWORD --admin_email=$EMAIL <<PHP
 define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
-define(‘WP_MEMORY_LIMIT’, ‘128M’)
+define( ‘WP_MEMORY_LIMIT’, ‘256M’);
 PHP
 #echo TITLE
 
 
-#creation de post de 1 a 100
+creation de post de 1 a 100
 read -rp "You want som post by default (100 maximum): " post
 
-if [[ $post = *[!0-9]* ]]; then  # if post contains any non-digits
-    printf >&2 'Invalid input\n'
-elif (( post < 0 || post > 100 )); then
-    printf >&2 '%d is out of range (0-100)\n' "$post"
-else
-    #printf 'Creating post %d\n' "$post"
-    curl http://loripsum.net/api/5 | wp post generate --post_content --count=$post
-fi
+#if [[ $post = *[!0-9]* ]]; then  # if post contains any non-digits
+    #printf >&2 'Invalid input\n'
+#elif (( post < 0 || post > 100 )); then
+    #printf >&2 '%d is out of range (0-100)\n' "$post"
+#else
+    ##printf 'Creating post %d\n' "$post"
+    #curl http://loripsum.net/api/5 | wp post generate --post_content --count=$post
+#fi
 
+curl http://loripsum.net/api/5 | wp post generate --post_content --count=10
 
 wp theme install https://github.com/roots/sage/archive/master.zip 
 wp theme activate sage-master
